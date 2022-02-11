@@ -120,6 +120,7 @@ module.exports = function(options) {
       }
 
       ctx.set('Access-Control-Allow-Origin', origin);
+      ctx.set('Access-Control-Allow-Private-Network', 'true');
 
       if (credentials === true) {
         ctx.set('Access-Control-Allow-Credentials', 'true');
